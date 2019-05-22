@@ -12,6 +12,15 @@ public class ParallelLinesArrayGreyscaleSolution implements GreyscaleConverter {
 	
 	private static final int PARALLELISM = Runtime.getRuntime().availableProcessors();
 	
+	// according to 
+	// https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/awt/image/BufferedImage.java
+	// https://zgrepcode.com/java/oracle/jdk-8u181/java/awt/image/bufferedimage.java
+	// setRGB is marked as synchronized
+	// issue to remove this flag
+	// https://bugs.openjdk.java.net/browse/JDK-8183980
+	// but we don't need it to be sync
+	// we doesn't have overlapped calls
+
 	@Override
 	public BufferedImage convert(BufferedImage img) 
 	{
