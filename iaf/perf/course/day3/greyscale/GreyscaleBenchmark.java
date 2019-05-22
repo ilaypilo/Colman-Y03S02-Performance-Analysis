@@ -14,7 +14,7 @@ import iaf.perf.course.day3.greyscale.GreyscaleEx.GreyscaleConverter;
 
 public class GreyscaleBenchmark {
 
-	private final GreyscaleConverter serial = new FirstGreyscaleSolution();
+	private final GreyscaleConverter serial = new MyParallelArrayGreyscaleSolution();
 //	private final GreyscaleConverter efficient = new EfficientGreyscaleSolution();
 //	private final GreyscaleConverter parallel = new ParallelGreyscaleSolution();
 //	
@@ -22,8 +22,8 @@ public class GreyscaleBenchmark {
 	
 	private static final BufferedImage rgb;
 	
-	private static final long WARMUP_ITER = (long) 100;
-	private static final long BENCHMARK_ITER = (long) 200;
+	private static final long WARMUP_ITER = (long) 150;
+	private static final long BENCHMARK_ITER = (long) 300;
 	
 	static {
 		try {

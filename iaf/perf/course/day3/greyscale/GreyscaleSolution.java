@@ -14,18 +14,6 @@ public class GreyscaleSolution implements GreyscaleConverter {
 		BufferedImage greyscale = new BufferedImage(img.getWidth(), img.getHeight(), 
 				BufferedImage.TYPE_INT_RGB);
 		
-		/*
-		 * This is actually very inefficient, memory-wise.
-		 * BufferedImage.getRGB accesses the BufferedImage's:
-		 *   1. ColorModel, which accesses:
-		 *   	1.1 DataBuffer
-		 *   2. Raster, which accesses:
-		 *   	2.1. SampleModel, which accesses:
-		 *   		2.1.1 DataBuffer
-		 *   
-		 * Resulting in a lot of cache noise.
-		 * What if instead we just stored the pixels in a byte[] or int[]?  
-		 */
 		for (int width = 0; width < img.getWidth(); width++) {
 			for (int height = 0; height < img.getHeight(); height++) {
 				int baseRgb = img.getRGB(width, height);

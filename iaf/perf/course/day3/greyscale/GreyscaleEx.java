@@ -37,7 +37,7 @@ public class GreyscaleEx {
 		try {
 //			Class<?> clz = Class.forName(converterClass);
 //			Object o = clz.newInstance();
-			GreyscaleConverter converter = (GreyscaleConverter) new SecondGreyscaleSolution();
+			GreyscaleConverter converter = (GreyscaleConverter) new MyParallelArrayGreyscaleSolution();
 			greyscale = converter.convert(rgbImage);
 //		} catch (ClassNotFoundException e) {
 //			e.printStackTrace();
