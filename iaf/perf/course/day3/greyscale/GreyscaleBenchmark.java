@@ -14,7 +14,7 @@ import iaf.perf.course.day3.greyscale.GreyscaleEx.GreyscaleConverter;
 
 public class GreyscaleBenchmark {
 
-	private final GreyscaleConverter serial = new ArrayGreyscaleSolution();
+	private final GreyscaleConverter serial = new ParallelLinesArrayGreyscaleSolution();
 //	private final GreyscaleConverter efficient = new EfficientGreyscaleSolution();
 //	private final GreyscaleConverter parallel = new ParallelGreyscaleSolution();
 //	
