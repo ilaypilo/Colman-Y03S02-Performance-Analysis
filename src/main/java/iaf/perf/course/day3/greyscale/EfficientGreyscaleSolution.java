@@ -11,7 +11,7 @@ public class EfficientGreyscaleSolution implements GreyscaleConverter
 	public BufferedImage convert(BufferedImage img) {
 		final int[] data = imageToIntArray(img);
 		for (int i = 0; i < data.length; i++) {
-			data[i] = GreyscaleSolution.rgbToGrey(data[i]);
+			data[i] = NaiveGreyscaleSolution.rgbToGrey(data[i]);
 		}
 		return intArrayToImage(data, img.getWidth(), img.getHeight());
 	}

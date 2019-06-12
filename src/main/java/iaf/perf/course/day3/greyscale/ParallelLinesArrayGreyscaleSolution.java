@@ -36,7 +36,7 @@ public class ParallelLinesArrayGreyscaleSolution implements GreyscaleConverter {
 			pool.submit(() -> {
 				int[] rgbArray = new int[numOfLinesForEachJob * img.getWidth()];
 				img.getRGB(0, index*numOfLinesForEachJob, img.getWidth(), numOfLinesForEachJob, rgbArray, 0, img.getWidth());
-				Arrays.setAll(rgbArray, rgbIndex -> GreyscaleSolution.rgbToGrey(rgbArray[rgbIndex]));
+				Arrays.setAll(rgbArray, rgbIndex -> NaiveGreyscaleSolution.rgbToGrey(rgbArray[rgbIndex]));
 				greyscale.setRGB(0, index*numOfLinesForEachJob, img.getWidth(), numOfLinesForEachJob, rgbArray, 0, img.getWidth());
 			});
 		}

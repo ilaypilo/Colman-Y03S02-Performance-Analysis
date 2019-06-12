@@ -4,12 +4,12 @@ import java.awt.image.BufferedImage;
 
 import iaf.perf.course.day3.greyscale.GreyscaleEx.GreyscaleConverter;
 
-public class GreyscaleSolution implements GreyscaleConverter {
+public class NaiveGreyscaleSolution implements GreyscaleConverter {
 
 	private static final int ALPHA = 255 << 24;
-	
+
 	@Override
-	public BufferedImage convert(BufferedImage img) 
+	public BufferedImage convert(BufferedImage img)
 	{
 		BufferedImage greyscale = new BufferedImage(img.getWidth(), img.getHeight(), 
 				BufferedImage.TYPE_INT_RGB);

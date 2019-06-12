@@ -52,7 +52,7 @@ public class ParallelGreyscaleSolution implements GreyscaleConverter
 		public void run() {
 			int maxIndex = Math.min(data.length, upperBound);
 			for (int i = lowerBound; i < maxIndex; i++) {
-				data[i] = GreyscaleSolution.rgbToGrey(data[i]);
+				data[i] = NaiveGreyscaleSolution.rgbToGrey(data[i]);
 			}
 			latch.countDown();
 		}
@@ -64,7 +64,7 @@ public class ParallelGreyscaleSolution implements GreyscaleConverter
 		SERIAL {
 			@Override
 			public GreyscaleConverter newConverter() {
-				return new GreyscaleSolution();
+				return new NaiveGreyscaleSolution();
 			}
 		} ,
 		PARALLEL {

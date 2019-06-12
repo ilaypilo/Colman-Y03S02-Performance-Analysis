@@ -28,7 +28,7 @@ public class ThreadPoolParallelArrayGreyscaleSolution implements GreyscaleConver
 			final int offset = sizeOfEachJob * i;
 			pool.submit(() -> {
 				for(int j = 0; j < sizeOfEachJob; j++)
-				rgbArray[offset+j] = GreyscaleSolution.rgbToGrey(rgbArray[offset+j]);
+				rgbArray[offset+j] = NaiveGreyscaleSolution.rgbToGrey(rgbArray[offset+j]);
 			});
 		}
 		

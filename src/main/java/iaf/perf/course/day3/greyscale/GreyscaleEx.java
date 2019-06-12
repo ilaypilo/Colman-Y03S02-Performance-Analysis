@@ -7,6 +7,7 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
@@ -15,7 +16,7 @@ import javax.swing.JScrollPane;
 
 public class GreyscaleEx {
 	
-	public static final String RGB_LOCATION = "C:\\perf\\rgb.jpg";
+	public static final String RGB_LOCATION = "/rgb.jpg";
 
 	public static void main(String... args) {
 //		if (args.length <= 0) {
@@ -25,7 +26,7 @@ public class GreyscaleEx {
 
 		BufferedImage rgbImage;
 		try {
-			rgbImage = ImageIO.read(new File(RGB_LOCATION));
+			rgbImage = ImageIO.read(GreyscaleEx.class.getResource(RGB_LOCATION));
 		}  catch (IOException ioe) {
 			ioe.printStackTrace();
 			System.out.println("Failed to load image from " + RGB_LOCATION);

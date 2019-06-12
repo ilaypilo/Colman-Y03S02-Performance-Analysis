@@ -17,7 +17,7 @@ public class ArrayGreyscaleSolution implements GreyscaleConverter {
 		img.getRGB(0, 0, img.getWidth(), img.getHeight(), rgbArray, 0, img.getWidth());
 		
 		for (int i = 0; i < rgbArray.length; i++) {
-			rgbArray[i] = GreyscaleSolution.rgbToGrey(rgbArray[i]);
+			rgbArray[i] = NaiveGreyscaleSolution.rgbToGrey(rgbArray[i]);
 		}
 		
 		greyscale.setRGB(0, 0, img.getWidth(), img.getHeight(), rgbArray, 0, img.getWidth());

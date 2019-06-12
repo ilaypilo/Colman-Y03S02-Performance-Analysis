@@ -1,7 +1,7 @@
 package iaf.ofek.perf;
 
 import iaf.perf.course.day3.greyscale.GreyscaleEx;
-import iaf.perf.course.day3.greyscale.GreyscaleSolution;
+import iaf.perf.course.day3.greyscale.NaiveGreyscaleSolution;
 import iaf.perf.course.day3.greyscale.ArrayGreyscaleSolution;
 import iaf.perf.course.day3.greyscale.GraphicsGreyscaleSolution;
 import iaf.perf.course.day3.greyscale.JavaParallelArrayGreyscaleSolution;
@@ -32,7 +32,7 @@ public class GreyscaleBenchmark
     @Setup(Level.Iteration)
     public void setup() {
         try {
-            rgb = ImageIO.read(new File(GreyscaleEx.RGB_LOCATION));
+            rgb = ImageIO.read(GreyscaleEx.class.getResource(GreyscaleEx.RGB_LOCATION));
         }  catch (IOException ioe) {
             System.out.println("Failed to load image from " + GreyscaleEx.RGB_LOCATION);
             throw new RuntimeException(ioe);
@@ -41,7 +41,7 @@ public class GreyscaleBenchmark
 
     @Benchmark
     public BufferedImage NavieGreyscaleBenchmark() {
-        GreyscaleEx.GreyscaleConverter greyscaleConverter = new GreyscaleSolution();
+        GreyscaleEx.GreyscaleConverter greyscaleConverter = new NaiveGreyscaleSolution();
         return greyscaleConverter.convert(rgb);
     }
 

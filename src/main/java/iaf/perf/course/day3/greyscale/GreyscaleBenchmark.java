@@ -8,13 +8,13 @@ import javax.imageio.ImageIO;
 
 import iaf.perf.course.day3.greyscale.EfficientGreyscaleSolution;
 import iaf.perf.course.day3.greyscale.GreyscaleEx;
-import iaf.perf.course.day3.greyscale.GreyscaleSolution;
+import iaf.perf.course.day3.greyscale.NaiveGreyscaleSolution;
 import iaf.perf.course.day3.greyscale.ParallelGreyscaleSolution;
 import iaf.perf.course.day3.greyscale.GreyscaleEx.GreyscaleConverter;
 
 public class GreyscaleBenchmark {
 
-	private final GreyscaleConverter serial = new ParallelLinesArrayGreyscaleSolution();
+	private final GreyscaleConverter serial = new GraphicsGreyscaleSolution();
 //	private final GreyscaleConverter efficient = new EfficientGreyscaleSolution();
 //	private final GreyscaleConverter parallel = new ParallelGreyscaleSolution();
 //	
@@ -27,7 +27,7 @@ public class GreyscaleBenchmark {
 	
 	static {
 		try {
-			rgb = ImageIO.read(new File(GreyscaleEx.RGB_LOCATION));
+			rgb = ImageIO.read(GreyscaleEx.class.getResource(GreyscaleEx.RGB_LOCATION));
 		}  catch (IOException ioe) {
 			System.out.println("Failed to load image from " + GreyscaleEx.RGB_LOCATION);
 			throw new RuntimeException(ioe);
@@ -41,7 +41,17 @@ public class GreyscaleBenchmark {
 	public void benchmark() {
 		warmup();
 		System.gc();
+		try {
+			System.in.read();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		measure();
+		try {
+			System.in.read();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	private void measure() {

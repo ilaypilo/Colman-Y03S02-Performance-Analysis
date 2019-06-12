@@ -16,7 +16,7 @@ public class JavaParallelArrayGreyscaleSolution implements GreyscaleConverter {
 		int[] rgbArray = new int[img.getWidth()* img.getHeight()];
 		img.getRGB(0, 0, img.getWidth(), img.getHeight(), rgbArray, 0, img.getWidth());
 		
-		Arrays.parallelSetAll(rgbArray, i -> GreyscaleSolution.rgbToGrey(rgbArray[i]));
+		Arrays.parallelSetAll(rgbArray, i -> NaiveGreyscaleSolution.rgbToGrey(rgbArray[i]));
 
 		greyscale.setRGB(0, 0, img.getWidth(), img.getHeight(), rgbArray, 0, img.getWidth());
 		return greyscale;
