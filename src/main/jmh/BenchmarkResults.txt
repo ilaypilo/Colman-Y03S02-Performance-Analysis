@@ -1,0 +1,61 @@
+﻿Benchmark                                                                                                         Mode     Cnt     Score     Error  Units
+GreyscaleBenchmark.ArrayGreyscaleBenchmark                                                                       thrpt      45    75.595 ±   0.357  ops/s
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark                                                                    thrpt      45  2388.705 ± 106.882  ops/s
+GreyscaleBenchmark.NavieGreyscaleBenchmark                                                                       thrpt      45    54.356 ±   3.518  ops/s
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark                                                           thrpt      45    86.977 ±   0.527  ops/s
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark                                                          thrpt      45   176.250 ±   5.237  ops/s
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark                                                     thrpt      45    67.558 ±   2.780  ops/s
+GreyscaleBenchmark.ArrayGreyscaleBenchmark                                                                      sample   10132     0.013 ±   0.001   s/op
+GreyscaleBenchmark.ArrayGreyscaleBenchmark:ArrayGreyscaleBenchmark·p0.00                                        sample             0.013             s/op
+GreyscaleBenchmark.ArrayGreyscaleBenchmark:ArrayGreyscaleBenchmark·p0.50                                        sample             0.013             s/op
+GreyscaleBenchmark.ArrayGreyscaleBenchmark:ArrayGreyscaleBenchmark·p0.90                                        sample             0.014             s/op
+GreyscaleBenchmark.ArrayGreyscaleBenchmark:ArrayGreyscaleBenchmark·p0.95                                        sample             0.014             s/op
+GreyscaleBenchmark.ArrayGreyscaleBenchmark:ArrayGreyscaleBenchmark·p0.99                                        sample             0.016             s/op
+GreyscaleBenchmark.ArrayGreyscaleBenchmark:ArrayGreyscaleBenchmark·p0.999                                       sample             0.019             s/op
+GreyscaleBenchmark.ArrayGreyscaleBenchmark:ArrayGreyscaleBenchmark·p0.9999                                      sample             0.022             s/op
+GreyscaleBenchmark.ArrayGreyscaleBenchmark:ArrayGreyscaleBenchmark·p1.00                                        sample             0.022             s/op
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark                                                                   sample  329325    ≈ 10⁻³             s/op
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark:GraphicsGreyscaleBenchmark·p0.00                                  sample            ≈ 10⁻³             s/op
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark:GraphicsGreyscaleBenchmark·p0.50                                  sample            ≈ 10⁻³             s/op
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark:GraphicsGreyscaleBenchmark·p0.90                                  sample            ≈ 10⁻³             s/op
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark:GraphicsGreyscaleBenchmark·p0.95                                  sample            ≈ 10⁻³             s/op
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark:GraphicsGreyscaleBenchmark·p0.99                                  sample             0.001             s/op
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark:GraphicsGreyscaleBenchmark·p0.999                                 sample             0.001             s/op
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark:GraphicsGreyscaleBenchmark·p0.9999                                sample             0.002             s/op
+GreyscaleBenchmark.GraphicsGreyscaleBenchmark:GraphicsGreyscaleBenchmark·p1.00                                  sample             0.002             s/op
+GreyscaleBenchmark.NavieGreyscaleBenchmark                                                                      sample    8515     0.016 ±   0.001   s/op
+GreyscaleBenchmark.NavieGreyscaleBenchmark:NavieGreyscaleBenchmark·p0.00                                        sample             0.015             s/op
+GreyscaleBenchmark.NavieGreyscaleBenchmark:NavieGreyscaleBenchmark·p0.50                                        sample             0.016             s/op
+GreyscaleBenchmark.NavieGreyscaleBenchmark:NavieGreyscaleBenchmark·p0.90                                        sample             0.017             s/op
+GreyscaleBenchmark.NavieGreyscaleBenchmark:NavieGreyscaleBenchmark·p0.95                                        sample             0.018             s/op
+GreyscaleBenchmark.NavieGreyscaleBenchmark:NavieGreyscaleBenchmark·p0.99                                        sample             0.019             s/op
+GreyscaleBenchmark.NavieGreyscaleBenchmark:NavieGreyscaleBenchmark·p0.999                                       sample             0.025             s/op
+GreyscaleBenchmark.NavieGreyscaleBenchmark:NavieGreyscaleBenchmark·p0.9999                                      sample             0.027             s/op
+GreyscaleBenchmark.NavieGreyscaleBenchmark:NavieGreyscaleBenchmark·p1.00                                        sample             0.027             s/op
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark                                                          sample   11577     0.012 ±   0.001   s/op
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark:JavaParallelArrayGreyscaleBenchmark·p0.00                sample             0.011             s/op
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark:JavaParallelArrayGreyscaleBenchmark·p0.50                sample             0.011             s/op
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark:JavaParallelArrayGreyscaleBenchmark·p0.90                sample             0.012             s/op
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark:JavaParallelArrayGreyscaleBenchmark·p0.95                sample             0.013             s/op
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark:JavaParallelArrayGreyscaleBenchmark·p0.99                sample             0.014             s/op
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark:JavaParallelArrayGreyscaleBenchmark·p0.999               sample             0.030             s/op
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark:JavaParallelArrayGreyscaleBenchmark·p0.9999              sample             0.160             s/op
+GreyscaleBenchmark.JavaParallelArrayGreyscaleBenchmark:JavaParallelArrayGreyscaleBenchmark·p1.00                sample             0.178             s/op
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark                                                         sample   23944     0.006 ±   0.001   s/op
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark:ParallelLinesArrayGreyscaleBenchmark·p0.00              sample             0.005             s/op
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark:ParallelLinesArrayGreyscaleBenchmark·p0.50              sample             0.006             s/op
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark:ParallelLinesArrayGreyscaleBenchmark·p0.90              sample             0.006             s/op
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark:ParallelLinesArrayGreyscaleBenchmark·p0.95              sample             0.007             s/op
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark:ParallelLinesArrayGreyscaleBenchmark·p0.99              sample             0.008             s/op
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark:ParallelLinesArrayGreyscaleBenchmark·p0.999             sample             0.009             s/op
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark:ParallelLinesArrayGreyscaleBenchmark·p0.9999            sample             0.012             s/op
+GreyscaleBenchmark.ParallelLinesArrayGreyscaleBenchmark:ParallelLinesArrayGreyscaleBenchmark·p1.00              sample             0.012             s/op
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark                                                    sample    8911     0.015 ±   0.001   s/op
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark:ThreadPoolParallelArrayGreyscaleBenchmark·p0.00    sample             0.011             s/op
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark:ThreadPoolParallelArrayGreyscaleBenchmark·p0.50    sample             0.014             s/op
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark:ThreadPoolParallelArrayGreyscaleBenchmark·p0.90    sample             0.021             s/op
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark:ThreadPoolParallelArrayGreyscaleBenchmark·p0.95    sample             0.023             s/op
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark:ThreadPoolParallelArrayGreyscaleBenchmark·p0.99    sample             0.026             s/op
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark:ThreadPoolParallelArrayGreyscaleBenchmark·p0.999   sample             0.027             s/op
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark:ThreadPoolParallelArrayGreyscaleBenchmark·p0.9999  sample             0.029             s/op
+GreyscaleBenchmark.ThreadPoolParallelArrayGreyscaleBenchmark:ThreadPoolParallelArrayGreyscaleBenchmark·p1.00    sample             0.029             s/op
